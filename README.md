@@ -29,7 +29,7 @@ Visit our [documentation](https://docs.covalent.xyz/docs/cloud/covalent_cloud_ma
 
 ## Table of Contents
 
-| Application                                                         | Documentation                                                                       |Description                                      |
+| Application                                                         | Documentation                                                                        |Description                                       |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------------------------------------------------|
 | 🏭 [AI Model Foundry](https://github.com/AgnostiqHQ/tutorials_covalent_pycon_2024)    |[link](https://github.com/AgnostiqHQ/tutorials_covalent_pycon_2024)| Autonomous AI model foundry     |
 | 🤖 [Curtis Covalent](./chatbot-curtis-covalent/README.md)           |[link](https://docs.covalent.xyz/docs/cloud/tutorials-cloud/serving_chat_bot/)        | Llama-based chatbot with a Canadian personality. |
