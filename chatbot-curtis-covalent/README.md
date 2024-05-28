@@ -1,56 +1,52 @@
-# Streamlit Chatbot
+# Chatbot: Curtis Covalent
 
 <div align="center">
-<img src="./streamlit-chatbot-demo.gif", width="60%">
+<img src="./assets/streamlit-chatbot-demo.gif", width="60%">
 </div>
 
 ## Instructions
+
+To to try this out, you can run a local Streamlit application that communicates with the Covalent backend.
+
 1. Make a conda environment with:
 ```
-accelerate==0.29.1
-covalent-cloud==0.54.0
-cloudpickle=2.2.1
-ipywidgets==8.1.2
-streamlit==1.33.0
+covalent-cloud>=0.65.1
+streamlit==1.35.0
 torch==2.2.2
 transformers==4.39.3
 ```
 
-2. Run the deploy notebook.
+2. Run the `chatbot-backend.ipynb` notebook to deploy the GPU Backend with Covalent.
 
-3. Copy paste the deployment address (e.g. `"https://fn.int.covalent.xyz/0662098d4603432d123456789"`) into the streamlit app script.
+3. Run the command `streamlit run chatbot-frontend.py` to start the local Streamlit app.
 
-4. Run or deploy the streamlit app.
+4. Copy-paste the deployment address and API key into the app's "Settings" sidebar.
 
-## Info
+That's all. You can now chat with Curtis Covalent!
 
-The notebook and script together are designed to run a Llama-2 chatbot. By default, the app runs in live streaming mode.
+## Details
 
-There are two global settings in the app script:
+This example is designed to run a Llama-based chatbot. There are two adjustable settings:
+
 ```python
-MESSAGE_MEMORY_SIZE = 100
-MAX_RESPONSE_TOKENS = 500
+MEMORY_LENGTH = 50
+MAX_RESPONSE_TOKENS = 275
 ```
-The memory size determines the number of prior messages (one prompt-response pair equals 2 messages) that the chat bot "remembers". The chatbot's memory lives on the Streamlit app side. Refreshing the app window will clear the bot's memory.
+The memory length determines the number of prior messages (one prompt-response pair equals 2 messages) that the chat bot "remembers". The chatbot's memory lives in the Streamlit app cache, so refreshing the app window will clear the bot's memory. The maximum number of response tokens determines the length of the response.
 
-The number of response tokens determines the maximum length of the response. The chatbot should reasonably terminate responses when appropriate, so a large number is recommended to avoid premature truncation.
-
-The model is prompted with the following. This format is recommended for Llama-2.
+### Prompting
+The model is prompted as follows.
 ```python
 LLAMA_PROMPT_TEMPLATE = """<s>[INST] <<SYS>>
-You are a friendly Canadian chat bot named 'Curtis Covalent'.
+You are a friendly Canadian chatbot named 'Curtis Covalent'. Introduce yourself as such.
 
-Please consider the message history below, and provide brief and polite response.
+Please consider the message history below, then provide a brief and polite response.
 <</SYS>>
 {message_memory} [/INST] """  # NOTE: trailing space is important!
 ```
 
-The `message_memory` above is a formatted reproduction of the chat displayed to the user (with a maximum context length of `MAX_MEMORY_SIZE` messagess).
+The `message_memory` field is a formatted reproduction of the chat displayed to the user.
 
-## Fun stuff
+## Extras
 
 The app will play a screen animation if the words "snow" or "balloons" are detected in the bot's response.
-
-## Debugging
-
-- Check the `env` passed to the executor. Make sure it is valid. If the environment is old, try re-creating it in the UI or creating a replacement.
