@@ -29,7 +29,7 @@ Visit our [documentation](https://docs.covalent.xyz/docs/cloud/covalent_cloud_ma
 
 ## Table of Contents
 
-| Application                                                         | Documentation                                                                       |Description                                      |
+| Application                                                         | Documentation                                                                        |Description                                       |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------------------------------------------------|
 | 🤖 [Curtis Covalent](./chatbot-curtis-covalent/README.md)           |[link](https://docs.covalent.xyz/docs/cloud/tutorials-cloud/serving_chat_bot/)        | Llama-based chatbot with a Canadian personality. |
 | 🌄 [Real-Time Image Generator](./image-generator-sdxl/README.md)    |[link](https://docs.covalent.xyz/docs/cloud/tutorials-cloud/serving_txt_to_img_model/)| Real-time image generation using SDXL-Turbo.     |
