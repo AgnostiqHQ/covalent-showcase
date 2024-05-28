@@ -1,7 +1,7 @@
 # Chatbot: Curtis Covalent
 
 <div align="center">
-<img src="./assets/streamlit-chatbot-demo.gif", width="60%">
+<img src="./assets/streamlit-chatbot-demo.gif">
 </div>
 
 ## Instructions

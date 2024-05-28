@@ -1,7 +1,7 @@
 # Real-Time Image Generator: SDXL
 
 <div align="center">
-<img src="./assets/streamlit-sdxl-demo.gif", width="60%">
+<img src="./assets/streamlit-sdxl-demo.gif">
 </div>
 
 ## Instructions
