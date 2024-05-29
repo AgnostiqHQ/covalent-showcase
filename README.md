@@ -1,6 +1,6 @@
 # ✨ Covalent Showcase ✨
 
-Welcome! This repository contains a collection of applications that showcase [Covalent Cloud](https://www.covalent.xyz/) workflows and/or services. See the [table of contents](#table-of-contents) below for a list of examples.
+Welcome! This repository contains a collection of applications that showcase [Covalent Cloud](https://www.covalent.xyz/) workflows and/or services. See the [table of contents](#table-of-contents) below for a list of examples. These materials complement our examples by providing additional resources such as front-end components, complete scripts, and more, which are linked from the [examples in our documentation](https://docs.covalent.xyz/docs/cloud/tutorials-cloud/tutorials).
 
 🚀 Visit our [Quick Start](https://docs.covalent.xyz/docs/cloud/cloud_quickstart) guide to get started with Covalent Cloud.
 
