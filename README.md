@@ -38,6 +38,7 @@ Visit our [documentation](https://docs.covalent.xyz/docs/cloud/covalent_cloud_ma
 
 - 👉 [Sign up for Covalent Cloud](https://app.covalent.xyz/register)
 - 📖 [Covalent documentation](https://docs.covalent.xyz/)
+- 📚 [More examples](https://docs.covalent.xyz/docs/cloud/tutorials-cloud/tutorials)
 - 🌟 [Covalent open-source](https://github.com/AgnostiqHQ/covalent)
 - 💬 [Chat with us in our public Slack](https://covalentworkflows.slack.com/ssb/redirect)
 - ✍️ [Blogs](https://www.covalent.xyz/blog/)
